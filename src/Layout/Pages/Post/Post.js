@@ -2,12 +2,12 @@ import {Card, Icon, Image} from "semantic-ui-react";
 import React from 'react'
 import "./Post.css"
 import {useState} from 'react';
-import Comments from "./Comments";
+import Comments from "../Comment/Comments";
 
-const Post = ({id, content, author, url, time, likes, comments_counter}) => {
+const Post = ({id, content, author, url, time, likes, comments_counter, initShowComments = false}) => {
     const [likes_counter, setLikes] = useState(likes);
     const [is_liked, setLikeState] = useState(false);
-    const [showComments, setShowComments] = useState(false);
+    const [showComments, setShowComments] = useState(initShowComments);
 
     const like = () => {
         setLikes(is_liked ? likes_counter - 1 : likes_counter + 1);

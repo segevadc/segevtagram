@@ -1,6 +1,6 @@
 import {Button, Form, Input, Loader} from "semantic-ui-react";
 import React from 'react'
-import "./Post.css"
+import "../Post/Post.css"
 import UserComment from "./userComment";
 import {useState, useEffect} from "react";
 import {SegevgramApi} from "../../../api/SegevgramApi";
