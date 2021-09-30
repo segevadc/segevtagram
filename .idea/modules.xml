@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/segevtagram.iml" filepath="$PROJECT_DIR$/.idea/segevtagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/segevgram.iml" filepath="$PROJECT_DIR$/.idea/segevgram.iml" />
     </modules>
   </component>
 </project>
