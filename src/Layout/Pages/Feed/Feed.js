@@ -16,12 +16,6 @@ const Feed = () => {
             setLoading(false);
         })();
     }, [])
-
-    /*  const postsComponents = postsList.map(post =>
-          <List.Item><Post content={post.content}
-                           author={post.author} url={post.url}
-                           time={post.time} likes={post.likes}
-                           comments_counter={post.comments_counter}/></List.Item>)*/
     return loading ? <Loader size='huge' active/> :
         <div className="Feed">
             <List>
@@ -29,9 +23,10 @@ const Feed = () => {
                     <List.Item><Post content={post.content}
                                      author={post.author} url={post.url}
                                      time={post.time} likes={post.likes}
-                                     comments_counter={post.comments_counter}/></List.Item>)}
+                                     comments_counter={post.comments_counter}
+                                     id={post.id}
+                    /></List.Item>)}
             </List>
         </div>
 }
-
 export default Feed

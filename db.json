@@ -30,9 +30,127 @@
   ],
   "comments": [
     {
+      "author": "Ahron Shtrul",
+      "time": "27/9/21 19:19",
+      "avatarUrl": "https://react.semantic-ui.com/images/avatar/large/matthew.png",
       "id": 1,
-      "body": "some comment",
+      "content": "some comment",
       "postId": 1
+    },
+    {
+      "author": "Amit Genish",
+      "time": "27/9/21 19:19",
+      "avatarUrl": "https://react.semantic-ui.com/images/avatar/large/matthew.png",
+      "id": 1,
+      "content": "yesss!",
+      "postId": 1
+    },
+    {
+      "time": 1633013537938,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/ManikRathee_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 2
+    },
+    {
+      "time": 1633013537942,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/fjaguero_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 3
+    },
+    {
+      "time": 1633013538275,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/aleinadsays_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 4
+    },
+    {
+      "time": 1633013538280,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/begreative_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 5
+    },
+    {
+      "time": 1633013543520,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/fotomagin_128.jpg",
+      "postId": 1,
+      "content": "a",
+      "id": 6
+    },
+    {
+      "time": 1633013543522,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/iamkeithmason_128.jpg",
+      "postId": 1,
+      "content": "a",
+      "id": 7
+    },
+    {
+      "time": 1633013555647,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/badlittleduck_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 8
+    },
+    {
+      "time": 1633013555652,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/d_kobelyatsky_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 9
+    },
+    {
+      "time": 1633013589929,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/carlfairclough_128.jpg",
+      "postId": 1,
+      "content": "b",
+      "id": 10
+    },
+    {
+      "time": 1633013589926,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/alagoon_128.jpg",
+      "postId": 1,
+      "content": "b",
+      "id": 11
+    },
+    {
+      "time": 1633013593574,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/emmeffess_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 12
+    },
+    {
+      "time": 1633013593575,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/bistrianiosip_128.jpg",
+      "postId": 1,
+      "content": null,
+      "id": 13
+    },
+    {
+      "time": 1633013721374,
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/jodytaggart_128.jpg",
+      "postId": 2,
+      "content": "itayush",
+      "id": 14
+    },
+    {
+      "time": 1633014184855,
+      "author": "name.first_name",
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/necodymiconer_128.jpg",
+      "postId": 2,
+      "content": "ahm ahm",
+      "id": 15
+    },
+    {
+      "time": 1633014607889,
+      "author": "Curtis",
+      "avatarUrl": "https://cdn.fakercloud.com/avatars/markretzloff_128.jpg",
+      "postId": 2,
+      "content": "hi",
+      "id": 16
     }
   ],
   "profile": {

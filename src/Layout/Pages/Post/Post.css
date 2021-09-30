@@ -11,6 +11,6 @@
 .image-adjustments{
 }
 
-.card-adjusments{
-
+.ui.card.card-adjusments{
+    width: 35em;
 }
