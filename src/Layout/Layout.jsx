@@ -4,10 +4,33 @@ import {PagesRouter} from "./Pages/PagesRouter";
 */
 import {BrowserRouter as Router} from "react-router-dom";
 import Post from "./Pages/Post/Post";
+import Feed from "./Pages/Feed/Feed";
+
+const posts = [
+    {
+        "id": 1,
+        "content": "Helloooooo lksdjkslz skljdfcc ds,cnmdc zs dcmd,. mx m,s.adm ,.mx ,n m,dn, m., na,d bj sa,v nkjln skljd",
+        "author": "Itay Sadeh",
+        "url": "https://react.semantic-ui.com/images/avatar/large/matthew.png",
+        "time": "29/9/21 19:19",
+        "comments_counter": 2,
+        "likes": 4
+    },
+    {
+        "id": 2,
+        "content": "skd kldsjd lkdj cjsdkhn cknsac jshcjkdjfm fcnn jkjckncnmilj isoncms cjksjc  skljcjks m,snsc smcjion",
+        "author": "Jonathan Martens",
+        "url": "https://react.semantic-ui.com/images/avatar/large/matthew.png",
+        "time": "27/9/21 19:19",
+        "comments_counter": 4,
+        "likes": 41
+    }
+]
 
 export const Layout = () => {
     return <Router>
         <Header/>
+        <Feed posts={posts}/>
         <Post id={1}
               content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
