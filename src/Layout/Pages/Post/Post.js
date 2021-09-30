@@ -26,7 +26,7 @@ const Post = ({content, author, url, time, likes, comments_counter}) => {
             </Card.Content>
             <Card.Content className={"likes-comments"} extra>
                 <a onClick={like} >
-                    <Icon name='like' color={"red"} disabled={is_liked}/>
+                    <Icon name='like' color={"red"} disabled={!is_liked}/>
                     <label style={{fontWeight:"bold"}}>{likes_counter} likes</label>
                 </a>
                 <a>
