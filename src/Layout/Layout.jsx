@@ -13,7 +13,8 @@ export const Layout = () => {
                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               author="Itay Sadeh"
               url="https://react.semantic-ui.com/images/avatar/large/matthew.png"
-              time="29/9/21 19:19"/>
+              time="29/9/21 19:19"
+              likes={22} comments_counter={2}/>
         {/*        <PagesRouter/>*/
         }
     </Router>

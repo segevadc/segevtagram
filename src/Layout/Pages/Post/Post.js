@@ -2,11 +2,11 @@ import {Card, Icon, Image} from "semantic-ui-react";
 import React from 'react'
 import "./Post.css"
 
-const Post = ({content, author, url, time}) => (
+const Post = ({content, author, url, time, likes, comments_counter}) => (
     <div className="post">
-        <Card>
-            <Card.Header>{author}</Card.Header>
-            <Image src={url} wrapped ui={false}/>
+        <Card className="card-adjusments">
+            <Card.Content textAlign="right" className="user-display">{author}</Card.Content>
+            <Image centered className="image-adjustments" src={url} wrapped ui={false}/>
             <Card.Content>
                 <Card.Meta>
                     <span className='date'>{time}</span>
@@ -15,10 +15,14 @@ const Post = ({content, author, url, time}) => (
                     {content}
                 </Card.Description>
             </Card.Content>
-            <Card.Content extra>
+            <Card.Content className={"likes-comments"} extra>
                 <a>
                     <Icon name='like'/>
-                    22 likes
+                    {likes} likes
+                </a>
+                <a>
+                    <Icon name='comment'/>
+                    {comments_counter} comments
                 </a>
             </Card.Content>
         </Card>
@@ -26,11 +30,3 @@ const Post = ({content, author, url, time}) => (
 )
 
 export default Post
-/*
-export const Post = ({}) => {
-    return (
-        <div className=''>
-
-        </div>
-    )
-}*/

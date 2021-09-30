@@ -13,7 +13,7 @@ export const Navbar = () => {
         <Menu pointing secondary>
                 <Menu.Item>
                     <div id="logo">
-                        Segevtagram
+                        Segevgram
                     </div>
                 </Menu.Item>
             </Menu>

@@ -3,3 +3,14 @@
     display: flex;
     justify-content: center;
 }
+
+.likes-comments{
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-adjustments{
+}
+
+.card-adjusments{
+
+}
