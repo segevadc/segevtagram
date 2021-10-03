@@ -3,6 +3,7 @@ import React from 'react'
 import "./Post.css"
 import {useState} from 'react';
 import Comments from "../Comment/Comments";
+import {useHistory} from "react-router-dom";
 
 const Post = ({id, content, author, url, time, likes, comments_counter, initShowComments = false}) => {
     const [likes_counter, setLikes] = useState(likes);
@@ -15,6 +16,12 @@ const Post = ({id, content, author, url, time, likes, comments_counter, initShow
     }
     const comment = () => {
         setShowComments(!showComments);
+    }
+
+    const history = useHistory();
+
+    const goToPlacePage = (postId) => {
+        history.push(`/post?id=${postId}`);
     }
 
     return <div className="post">
@@ -36,7 +43,10 @@ const Post = ({id, content, author, url, time, likes, comments_counter, initShow
                 </a>
                 <a onClick={comment}>
                     <Icon name='comment'/>
-                    <label style={{fontWeight: "bold"}}>{comments_counter} comments</label>
+                    <label style={{fontWeight: "bold"}}>comments</label>
+                </a>
+                <a onClick={() => goToPlacePage(id)}>
+                    <Icon name='external alternate'/>
                 </a>
             </Card.Content>
             {showComments ? <Comments postId={id}/> : null}

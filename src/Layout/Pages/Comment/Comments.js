@@ -9,7 +9,7 @@ import {image, name} from 'faker'
 const Comments = ({postId}) => {
     const [loading, setLoading] = useState(true);
     const [commentsList, setCommentsList] = useState(null);
-    const [inputComment, setCommentInput] = useState(null);
+    const [inputComment, setCommentInput] = useState("");
     useEffect(() => {
         (async () => {
             setLoading(true);

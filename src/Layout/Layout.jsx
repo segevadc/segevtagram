@@ -1,16 +1,14 @@
 import {Header} from './Header/Header';
-/*
-import {PagesRouter} from "./Pages/PagesRouter";
-*/
 import {BrowserRouter as Router} from "react-router-dom";
-import Feed from "./Pages/Feed/Feed";
+import {PagesRouter} from "./Pages/PagesRouter";
+import "./Layout.css"
 
 export const Layout = () => {
     return <Router>
         <Header/>
-        <Feed/>
-        {/*        <PagesRouter/>*/
-        }
+        <div className={"con"}>
+            <PagesRouter/>
+        </div>
     </Router>
 }
 
