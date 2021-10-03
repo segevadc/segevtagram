@@ -21,7 +21,7 @@ export const PostPage = () => {
             setPost(post.data);
             setLoading(false);
         })();
-    }, [])
+    }, [postId])
 
     return loading ? <Loader size='huge' active/> :
         <div>

@@ -1,9 +1,9 @@
 import {Card, Icon, Image} from "semantic-ui-react";
-import React from 'react'
+import React, {useState} from 'react'
 import "./Post.css"
-import {useState} from 'react';
 import Comments from "../Comment/Comments";
 import {useHistory} from "react-router-dom";
+import {image} from 'faker'
 
 const Post = ({id, content, author, url, time, likes, comments_counter, initShowComments = false}) => {
     const [likes_counter, setLikes] = useState(likes);
@@ -27,7 +27,10 @@ const Post = ({id, content, author, url, time, likes, comments_counter, initShow
     return <div className="post">
         <Card className="card-adjusments">
             <Card.Content textAlign="right" className="user-display">{author}</Card.Content>
+            <Image centered className="image-adjustments" src={image.image()} wrapped ui={false}/>
+{/*
             <Image centered className="image-adjustments" src={url} wrapped ui={false}/>
+*/}
             <Card.Content>
                 <Card.Meta>
                     <span className='date'>{time}</span>

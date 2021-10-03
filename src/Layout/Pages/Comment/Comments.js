@@ -1,8 +1,7 @@
-import {Button, Form, Input, Loader} from "semantic-ui-react";
-import React from 'react'
+import {Button, Form, Loader} from "semantic-ui-react";
+import React, {useEffect, useState} from 'react'
 import "../Post/Post.css"
 import UserComment from "./userComment";
-import {useState, useEffect} from "react";
 import {SegevgramApi} from "../../../api/SegevgramApi";
 import {image, name} from 'faker'
 
@@ -17,7 +16,7 @@ const Comments = ({postId}) => {
             setCommentsList(comments.data);
             setLoading(false);
         })();
-    }, [])
+    }, [postId])
 
     const SendReply = async (content) => {
         await SegevgramApi.addComment({

@@ -3,17 +3,10 @@ import {useEffect, useState} from 'react'
 import "./Feed.css"
 import Post from "../Post/Post";
 import {SegevgramApi} from "../../../api/SegevgramApi";
-import {useHistory} from "react-router-dom";
 
 const Feed = () => {
     const [loading, setLoading] = useState(true);
     const [postsList, setPostsList] = useState(null);
-
-    const history = useHistory();
-
-    const goToPlacePage = (postId) => {
-        history.push(`/post?id=${postId}`);
-    }
 
     useEffect(() => {
         (async () => {
