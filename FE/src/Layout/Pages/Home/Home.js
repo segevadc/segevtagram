@@ -14,7 +14,7 @@ const Home = () => {
             <div className="searchText">
                 <label>be </label> <strong>Simple,</strong>
                 <br/>
-                <label> be </label> <strong>Social</strong>
+                <label> be </label> <strong>Social.</strong>
                 <LoginForm style={{height:"auto"}}/>
             </div>
             {/*  <Form onSubmit={onSearch}>

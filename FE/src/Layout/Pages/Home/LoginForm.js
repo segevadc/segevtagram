@@ -15,7 +15,7 @@ const LoginForm = () => {
                 <Image src='/logo.png'/> Log-in to your account
             </Header>*/}
             <Form size='large'>
-                <Segment stacked>
+                <Segment stacked className="login-segment">
                     <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address'/>
                     <Form.Input
                         fluid

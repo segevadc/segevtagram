@@ -27,6 +27,9 @@
 background: #0071c2;
     color: #EEEEEE;
 }
+.ui.stacked.segment.login-segment{
+    border-radius: 2em;
+}
 .home-grid {
     padding: 4rem;
     width: 50%;
