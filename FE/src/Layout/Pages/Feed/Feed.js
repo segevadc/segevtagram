@@ -11,7 +11,10 @@ const Feed = () => {
     useEffect(() => {
         (async () => {
             setLoading(true);
+            console.log("starttttt")
             const posts = await SegevgramApi.getPosts();
+            console.log(posts.data)
+            console.log(posts.data.length)
             setPostsList(posts.data);
             setLoading(false);
         })();

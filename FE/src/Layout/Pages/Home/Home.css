@@ -1,7 +1,6 @@
 .homeContainer {
     display: flex;
     justify-content: center;
-
 }
 
 .ui.form .field .ui.input input, .ui.form .fields .field .ui.input input {
@@ -17,19 +16,24 @@
     display: flex;
     border: 1px;
     border-radius: 1rem;
+    height: 100%;
+    overflow: hidden;
 }
 
-#login{
+#login {
     margin-top: 1em;
-    border-radius: 2em;
+    border-radius: 3rem;
 }
+
 .ui.button.login-btn {
-background: #0071c2;
+    background: #0071c2;
     color: #EEEEEE;
 }
-.ui.stacked.segment.login-segment{
+
+.ui.stacked.segment.login-segment {
     border-radius: 2em;
 }
+
 .home-grid {
     padding: 4rem;
     width: 50%;

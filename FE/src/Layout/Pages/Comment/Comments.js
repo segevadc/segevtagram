@@ -35,7 +35,7 @@ const Comments = ({postId}) => {
                 <Form.TextArea onChange={(e) => {
                     setCommentInput(e.target.value)
                 }} value={inputComment}/>
-                <Button content='Add Reply' labelPosition='left' icon='edit' primary
+                <Button content='Comment' labelPosition='left' icon='edit' primary
                         onClick={() => SendReply(inputComment)}/>
             </Form>
         </div>

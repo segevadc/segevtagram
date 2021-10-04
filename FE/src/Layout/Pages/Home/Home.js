@@ -15,7 +15,7 @@ const Home = () => {
                 <label>be </label> <strong>Simple,</strong>
                 <br/>
                 <label> be </label> <strong>Social.</strong>
-                <LoginForm style={{height:"auto"}}/>
+                <LoginForm style={{height: "auto"}}/>
             </div>
             {/*  <Form onSubmit={onSearch}>
                 <Form.Input
