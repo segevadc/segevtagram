@@ -1,4 +1,4 @@
-const postModel = require("../models");
+const {postModel} = require("../models");
 const express = require('express');
 const router = express.Router();
 
@@ -14,11 +14,21 @@ router.post("/add_post", async (request, response) => {
 });
 
 
-/* GET users listing. */
+/* GET posts. */
 router.get("/", async (request, response) => {
-    const users = await postModel.find({});
+    const posts = await postModel.find({});
     try {
-        response.send(users);
+        response.send(posts);
+    } catch (error) {
+        response.status(500).send(error);
+    }
+});
+
+/* GET single post by id. */
+router.get("/:id", async (request, response) => {
+    let post = await postModel.find({"id": request.params.id});
+    try {
+        response.send(post[0]);
     } catch (error) {
         response.status(500).send(error);
     }

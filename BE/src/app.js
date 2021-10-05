@@ -5,18 +5,20 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
 
 const indexRouter = require('./routes');
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts');
+const commentsRouter = require('./routes/comments');
 
 const app = express();
 
-function connctToMongo(uri, callback) {
+function connectToMongo(uri, callback) {
     const {MongoClient} = require('mongodb');
-    const connectionString = "mongodb+srv://segev:UUlWvz3c6vvorKgs@cluster0.vcfgm.mongodb.net/segevgram?retryWrites=true&w=majority";
+    const connectionString = "mongodb+srv://segev:UUlWvz3c6vvorKgs@cluster0.vcfgm.mongodb.net/segevgram"
     const client = new MongoClient(connectionString, {useNewUrlParser: true, useUnifiedTopology: true});
-    mongoose.connect(connectionString + '/usersdb', {
+    mongoose.connect(connectionString, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     });// view engine setup
@@ -28,8 +30,12 @@ function connctToMongo(uri, callback) {
     return db;
 }
 
+app.use(cors({
+    origin: '*'
+}));
+
 //connect to MongoDB
-const db = connctToMongo();
+connectToMongo();
 app.use(express.static(path.join(__dirname, '../public')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -43,6 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
+app.use('/comments', commentsRouter);
 
 
 // catch 404 and forward to error handler
